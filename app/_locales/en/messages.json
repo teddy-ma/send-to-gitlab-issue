@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "send to gitlab issue",
+    "description": "like getpocket but to gitlab issue"
+  },
+  "appDescription": {
+    "message": "send to gitlab issue",
+    "description": "like getpocket but to gitlab issue"
+  }
+}
