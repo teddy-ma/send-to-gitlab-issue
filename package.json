@@ -43,5 +43,26 @@
         "single"
       ]
     }
-  }
+  },
+  "description": "a chrome extension to create current tab's title and url as a gitlab issue",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teddy-ma/send-to-gitlab-issue"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teddy-ma/send-to-gitlab-issue/issues"
+  },
+  "homepage": "https://github.com/teddy-ma/send-to-gitlab-issue#readme",
+  "keywords": [
+    "send",
+    "to",
+    "gitlab",
+    "issue"
+  ]
 }
