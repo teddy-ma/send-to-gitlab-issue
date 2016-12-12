@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <title>Teddy Ma's Dotfiles</title>
+
+    <meta name="author" content="Teddy Ma">
+    <meta name="description" content="Teddy Ma's Dotfiles">
+    <meta name="keywords" content="dotfiles, git, github">
+
+    <!--<link href="https://www.songofcode.com/stylesheets/hackcss.css" rel=stylesheet />-->
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/mblode/marx/master/css/marx.min.css">-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/sofish/typo.css/master/typo.css">
+    <style>
+      code{ color:#1abc9c; }
+      html{ background:#eee; }
+      body{ width:90%; max-width: 960px; background:#fff; margin:3em auto 0; padding-top:2em;border:1px solid #ddd;border-width:0 1px;}
+      pre{white-space:pre-wrap;}
+
+      i.serif{ text-transform:lowercase; color:#1abc9c; }
+      :-moz-any(h1, h2, h3, h4, h5, h5) i.serif{ text-transform: capitalize; }
+      i.serif:hover{ color:inherit; }
+
+      #wrapper{ padding:5% 10%; position:relative;}
+      #tagline{ color:#999; font-size:1em; margin:-2em 0 2em; padding-bottom:2em; border-bottom:3px double #eee; }
+      #fork{ position:fixed; top:0; right:0; _position:absolute; }
+      #table{ margin-bottom:2em; color:#888; }
+      #github{ position:absolute;top:1em;}
+      #github iframe{ display:inline;margin-right:1em; }
+
+      @media only screen and (max-width: 640px) {
+        table{ word-break:break-all;word-wrap:break-word;font-size:12px; }
+        .typo table th, .typo table td, .typo-table th, .typo-table td .typo table caption {
+          padding: 0.5em;
+        }
+        #fork{ display:none; }
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="<%= page_classes %> typo">
+    <div id="wrapper" class="typo typo-selection">
+      {{ content }}
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68587267-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
