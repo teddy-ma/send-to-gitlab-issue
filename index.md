@@ -4,7 +4,7 @@ layout: home
 
 # 从零开始编写一个 chrome 扩展
 
-![webstore-extensions.jpg](http://upload-images.jianshu.io/upload_images/330-5a1a84ca8af8333a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![webstore-extensions.jpg]({{ site.baseurl }}/banner.jpg)
 Chrome 是 web 开发人员必备的浏览器没有之一。
 
 要编写一个 chrome 浏览器扩展也只需要（基本的）html，js ，css 这些 web 开发的基本能力。
@@ -68,11 +68,11 @@ Chrome 是 web 开发人员必备的浏览器没有之一。
 
 现在可以打开 chrome 浏览器的扩展管理页面，如图勾选载入开发中的扩展，选定项目的 `app` 目录，就能看到浏览器的右上角出现了我们正在开发的扩展了。
 
-![load-extension.png](http://upload-images.jianshu.io/upload_images/330-e44796101f28e6f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![load-extension.png]({{ site.baseurl }}/extend.png)
 
 一切顺利的话，点击图标，就会出现我们编写的 html 页面了。
 
-![popup.png](http://upload-images.jianshu.io/upload_images/330-badfdc9f0910e597.gif?imageMogr2/auto-orient/strip)
+![popup.png]({{ site.baseurl }}/icon.gif)
 
 好了让我们进入下一步，获取当前页面的标题和 url。很明显这两个数据需要通过 chrome 提供的接口才能获取，这里我本来采用的是在 `background.js` 中直接去获取 dom 树的内容，可是测试后发现，`background.js` 获取的总是第一个页面的内容，当切换 tab 页后数据也不会改变。结果还是老老实实地看文档，找到了下面的这段代码：
 
@@ -128,7 +128,7 @@ chrome 扩展可以自定义一个配置页面，在 `manifest.json` 中加入�
 </body>
 ```
 
-![options.png](http://upload-images.jianshu.io/upload_images/330-2ccc91cf42b1d1ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![options.png]({{ site.baseurl }}/options.gif)
 
 然后编写 `options.js` 文件，把配置项持久化到 localStorage 中：
 
@@ -152,7 +152,7 @@ document.getElementById('options_save').onclick = function() {
 
 现在如果右键点击扩展的图标的话，就能看到『选项』这个菜单是可点击的：
 
-![settings.png](http://upload-images.jianshu.io/upload_images/330-1c951dee1c4c4c38.gif?imageMogr2/auto-orient/strip)
+![settings.png]({{ site.baseurl }}/setting.png)
 
 然后在处理 gitlab 的 api 调用时，动态读取配置内容即可。
 
