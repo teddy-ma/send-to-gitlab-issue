@@ -133,11 +133,13 @@ chrome 扩展可以自定义一个配置页面，在 `manifest.json` 中加入�
 然后编写 `options.js` 文件，把配置项持久化到 localStorage 中：
 
 ```javascript
-var options_host = localStorage.options_host
+var options_host = localStorage.options_host;
 document.getElementById('options_host').value = options_host;
-var options_project_id = localStorage.options_project_id
+
+var options_project_id = localStorage.options_project_id;
 document.getElementById('options_project_id').value = options_project_id;
-var options_token = localStorage.options_token
+
+var options_token = localStorage.options_token;
 document.getElementById('options_token').value = options_token;
 
 document.getElementById('options_save').onclick = function() {

@@ -1,9 +1,9 @@
-baseurl: "/dotfiles" # the subpath of your site, e.g. /blog
+baseurl: "/send-to-gitlab-issue" # the subpath of your site, e.g. /blog
 url: "https://www.songofcode.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 exclude:
   - Gemfile
