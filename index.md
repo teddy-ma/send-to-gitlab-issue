@@ -11,6 +11,7 @@ Chrome 是 web 开发人员必备的浏览器没有之一。
 
 下面先看一下一个 chrome 扩展的项目结构吧：
 
+
 ```bash
 ├── images
 │   ├── icon-128.png
@@ -21,6 +22,7 @@ Chrome 是 web 开发人员必备的浏览器没有之一。
 └── scripts
     ├── background.js
 ```
+
 
 从文件结构来看，其实所谓的 chrome 扩展也就是一个类似 webapp 的东西。
 
@@ -142,7 +144,7 @@ document.getElementById('options_project_id').value = options_project_id;
 var options_token = localStorage.options_token;
 document.getElementById('options_token').value = options_token;
 
-document.getElementById('options_save').onclick = function() {
+document.getElementById('options_save').onclick = function(){
   localStorage.options_host = document.getElementById('options_host').value;
   localStorage.options_project_id = document.getElementById('options_project_id').value;
   localStorage.options_token = document.getElementById('options_token').value;
