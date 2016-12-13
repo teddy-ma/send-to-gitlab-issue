@@ -12,7 +12,7 @@ Chrome 是 web 开发人员必备的浏览器没有之一。
 下面先看一下一个 chrome 扩展的项目结构吧：
 
 
-```bash
+```shell
 ├── images
 │   ├── icon-128.png
 │   └── icon-16.png
