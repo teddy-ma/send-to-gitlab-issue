@@ -1,7 +1,3 @@
----
-layout: home
----
-
 # 从零开始编写一个 chrome 扩展
 
 ![webstore-extensions.jpg]({{ site.baseurl }}/banner.jpg)
